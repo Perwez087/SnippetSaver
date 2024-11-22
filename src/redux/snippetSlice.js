@@ -38,7 +38,7 @@ export const snippetSlice = createSlice({
     },
     removeFromSnippet: (state,action) =>{
       const snippetId = action.payload;
-      const index = state.snippets.findIndex((s) => s.id === snippetId);
+      const index = state.snippets.findIndex((s) => s._id === snippetId);
 
       if(index >= 0){
         state.snippets.splice(index, 1);

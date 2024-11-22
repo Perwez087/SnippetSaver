@@ -20,6 +20,7 @@ const Snippet = () => {
 
   const handleDelete = (snippetId) => {
     dispatch(removeFromSnippet(snippetId));
+    console.log(snippetId);
   };
 
   const handleCopy = (snippet) => {
